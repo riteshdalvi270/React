@@ -15,6 +15,7 @@ export default class Layout extends React.Component {
         }
         */
     
+        /*
         render() {
 
             setTimeout(() => {
@@ -28,5 +29,15 @@ export default class Layout extends React.Component {
                 <Footer/>
                 </div>
             );
+        }*/
+
+        render() {
+            return (
+            
+                <div>
+                    <Header title="Ritesh"/>
+                    <Footer/>
+                </div>    
+            )
         }
     }
