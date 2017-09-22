@@ -1,15 +1,19 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import Title from "../title/Title"
 
 export default class Header extends React.Component {
 
+    handleChange(e) {
+        const title = e.target.value;
+        this.props.changedTitle(title);
+    }
+
     render() {
-        this.props.changedTitle("New Title");
+        
         return(
             <div>
             <Title title ={this.props.title}/>
-            <input />
+            <input onChange={this.handleChange.bind(this)}/>
             </div>
         );
     }
